@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body { font-family: 'Lato', sans-serif; background-color: #f4f7f6; color: #333; }
+
+.scroll { height: 50px; }
+
+.container {
+    width: 95%;
+    max-width: 1200px;
+    margin: 30px auto;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    padding: 25px;
+}
+
+h1 { text-align: center; color: #3b3f5c; margin-bottom: 20px; }
+
+/* Barra de arriba */
+.top-bar { display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px; }
+
+.search-form { display: flex; gap: 5px; }
+.search-form input { padding: 8px; border: 1px solid #ddd; border-radius: 4px; width: 250px; }
+
+.btn { padding: 8px 15px; border-radius: 5px; font-weight: bold; text-decoration: none; cursor: pointer; font-size: 13px; }
+.btn-primary { background: #3b3f5c; color: white; }
+.btn-search { background: #eee; color: #333; border: 1px solid #ccc; }
+.btn-clear { color: purple; text-decoration: underline; background: none; border: none; }
+
+/* TABLA SIN DESFASE */
+.table-container { width: 100%; overflow-x: auto; margin-top: 10px; border: 1px solid #eee; border-radius: 8px; }
+.table { width: 100%; border-collapse: collapse; table-layout: fixed; min-width: 1000px; }
+
+.table thead { background: #3b3f5c; color: white; }
+.table th, .table td { 
+    padding: 12px; 
+    text-align: left; 
+    border-bottom: 1px solid #f1f1f1; 
+    font-size: 13px; 
+    white-space: nowrap; 
+    overflow: hidden; 
+    text-overflow: ellipsis; 
+}
+
+/* Anchos de columnas */
+.table th:nth-child(1) { width: 50px; }
+.table th:nth-child(2) { width: 180px; }
+.table th:nth-child(3) { width: 130px; }
+.table th:nth-child(4) { width: 180px; }
+.table th:nth-child(5) { width: 110px; }
+.table th:nth-child(6) { width: 200px; }
+.table th:nth-child(7) { width: 120px; }
+.table th:nth-child(8) { width: 90px; text-align: center; }
+
+/* Botones Acción */
+.d-flex-center { display: flex; gap: 5px; justify-content: center; }
+.btn-accion { width: 32px; height: 32px; display: flex; align-items: center; justify-content: center; border-radius: 5px; color: white; text-decoration: none; }
+.btn-edit { background: #ffb02e; }
+.btn-delete { background: #e7515a; }
+
+/* PAGINACIÓN ESTILO VENTAS */
+.pagination-container { display: flex; justify-content: center; margin-top: 25px; }
+.pagination { display: flex; gap: 5px; }
+
+.page-link {
+    padding: 10px 15px;
+    background: #3b3f5c; /* Oscuro */
+    color: white !important;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.page-link.active {
+    background: #2188ca; /* Azul brillante */
+}
+
+.page-link:hover { background: #4d5175; transform: translateY(-2px); transition: 0.2s; }
